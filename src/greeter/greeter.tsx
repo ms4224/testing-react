@@ -25,13 +25,15 @@ class Greeter extends React.Component<IProps, IState> {
         console.log('my lucky number is:', this.state.luckyNumber)
         this.setState({
             showYolo: true
-        })
+        });
+        this.props.yoloActivated(this.state.luckyNumber);
     }
 }
 
 interface IProps {
     firstName: string,
-    lastName: string
+    lastName: string,
+    yoloActivated: (luckyNumber: number) => void
 }
 
 interface IState {
