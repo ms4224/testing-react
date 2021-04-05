@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Clock from './clock/clock';
+import Greeter from './greeter/greeter';
 import './index.css';
 // import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -16,6 +17,7 @@ ReactDOM.render(
   <React.StrictMode>
     <Sample />
     <Clock></Clock>
+    <Greeter firstName={'Matias'} lastName={'Schakel'}></Greeter>
   </React.StrictMode>,
   document.getElementById('root')
 );
